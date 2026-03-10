@@ -8,7 +8,7 @@ namespace EventArchitecture.Examples
     {
         [SerializeField] private string _message = "Event received!";
 
-        public void LogMessa()
+        public void LogMessage()
         {
             Debug.Log(_message, this);
         }
