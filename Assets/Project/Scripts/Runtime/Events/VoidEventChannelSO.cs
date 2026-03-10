@@ -11,6 +11,8 @@ namespace EventArchitecture.Events
     {
         private readonly List<VoidEventListener> listeners = new();
 
+        public int ListenerCount => listeners.Count;
+
         public void RegisterListener(VoidEventListener listener)
         {
             if (listener == null) return;
