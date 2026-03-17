@@ -9,7 +9,7 @@ namespace EventArchitecture.Examples
     {
         [Header("Event Configuration")]
         [SerializeField, Tooltip("The event channel this invoker will raise.")]
-        private VoidEventChannelSO _eventChannel;
+            private VoidEventChannelSO _eventChannel;
 
         public void RaiseEvent()
         {

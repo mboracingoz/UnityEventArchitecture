@@ -6,7 +6,9 @@ namespace EventArchitecture.Examples
 {
     public sealed class GameObjectToggleResponder : MonoBehaviour
     {
-        [SerializeField] private GameObject _targetObject;
+        [Header("Target Configuration")]
+        [SerializeField, Tooltip("The GameObject whose active statel will be toggled when the event is received.")]
+        private GameObject _targetObject;
 
         public void ToggleTarget()
         {
