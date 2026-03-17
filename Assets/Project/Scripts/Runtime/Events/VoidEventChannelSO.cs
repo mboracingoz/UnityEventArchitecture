@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using EventArchitecture.Listeners;
@@ -6,7 +5,9 @@ using EventArchitecture.Listeners;
 namespace EventArchitecture.Events
 {
 
-    [CreateAssetMenu(fileName = "NewVoidEventChannel", menuName = "Event Architecture/Events/Void Event Channel")]
+    [CreateAssetMenu(
+    fileName = "NewVoidEventChannel",
+    menuName = "Event Architecture/Events/Void Event Channel")]
     public sealed class VoidEventChannelSO : ScriptableObject
     {
         private readonly List<VoidEventListener> listeners = new();

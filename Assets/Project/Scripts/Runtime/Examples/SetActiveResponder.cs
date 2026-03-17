@@ -7,8 +7,13 @@ namespace EventArchitecture.Examples
 
     public class SetActiveResponder : MonoBehaviour
     {
-        [SerializeField] private GameObject _targetObject;
-        [SerializeField] private bool _activeState = true;
+        [Header("Target Configuration")]
+        [SerializeField, Tooltip("The GameObject that will receive the active state change.")]
+        private GameObject _targetObject;
+
+        [Header("Active State Configuration")]
+        [SerializeField, Tooltip("The active state that will be set on the target GameObject.")]
+        private bool _activeState = true;
 
         public void SetActiveState()
         {
