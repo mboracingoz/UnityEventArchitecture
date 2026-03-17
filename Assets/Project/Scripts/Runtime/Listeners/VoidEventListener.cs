@@ -8,8 +8,13 @@ namespace EventArchitecture.Listeners
 {
     public sealed class VoidEventListener : MonoBehaviour
     {
-        [SerializeField] private VoidEventChannelSO _eventChannel;
-        [SerializeField] private UnityEvent _response;
+        [Header("Event Configuration")]
+        [SerializeField, Tooltip("The event channel this listener subscribes to.")]
+        private VoidEventChannelSO _eventChannel;
+
+        [Header("Response Configuration")]
+        [SerializeField, Tooltip("Invoked when the event channel raises an event.")]
+        private UnityEvent _response;
 
         void OnEnable()
         {
