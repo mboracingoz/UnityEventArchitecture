@@ -6,7 +6,9 @@ namespace EventArchitecture.Examples
 {
     public sealed class DebugLogResponder : MonoBehaviour
     {
-        [SerializeField] private string _message = "Event received!";
+        [Header("Debug Output Configuration")]
+        [SerializeField, Tooltip("The message written to the Console when the event is received.")]
+        private string _message = "Event received!";
 
         public void LogMessage()
         {
