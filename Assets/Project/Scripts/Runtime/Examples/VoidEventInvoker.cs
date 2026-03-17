@@ -7,7 +7,9 @@ namespace EventArchitecture.Examples
 {
     public sealed class VoidEventInvoker : MonoBehaviour
     {
-        [SerializeField] private VoidEventChannelSO _eventChannel;
+        [Header("Event Configuration")]
+        [SerializeField, Tooltip("The event channel this invoker will raise.")]
+        private VoidEventChannelSO _eventChannel;
 
         public void RaiseEvent()
         {
